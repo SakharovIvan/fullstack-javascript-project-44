@@ -2,7 +2,9 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "description": "[![Actions Status](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions)",
   "main": "index.js",
@@ -13,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "math": "^0.0.3",
+    "mathjs": "^12.2.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
