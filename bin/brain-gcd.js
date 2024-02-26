@@ -30,7 +30,7 @@ const brainGcd = (name)=> {
         }
 
     
-    console.log("Congratulations,"+name+" !")
+        if (i>2) {console.log("Congratulations,"+name+" !")}
 }
 
 export default brainGcd

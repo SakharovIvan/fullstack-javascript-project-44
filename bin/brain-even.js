@@ -28,7 +28,7 @@ const evenGame = (name)=> {
             
         }
     }
-    console.log("Congratulations,"+name+" !")
+    if (i>2) {console.log("Congratulations,"+name+" !")}
 }
 
 export default evenGame; evenCheck

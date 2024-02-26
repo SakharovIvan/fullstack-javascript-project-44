@@ -9,29 +9,22 @@ const brainPrime = (name)=> {
        while (i<3){
         let checkNumb = Math.round(Math.random()*100) //созаем число для проверки 
         let mas = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
-        let rightAnswer =""
-        //проводим проверку на простое число
-        for (let j=0; j<mas.length; j+=1){
-            if (checkNumb===mas[j]){
-                rightAnswer = "yes"
-       }else{rightAnswer = "no"}
-    }
-
+        let correctAnswer = ""
         console.log("Question: " + checkNumb)
-       let answer = readlineSync.question("Your answer: ")
-       if (answer===rightAnswer){ 
+        
+        if (mas.includes(checkNumb)){correctAnswer ="yes"}else{correctAnswer ="no"}
+
+        let clientAnswer = readlineSync.question("Your answer: ")
+       if (clientAnswer===correctAnswer){ 
         console.log('Correct!')
         i+=1
        }else{
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`)
+        console.log(`'${clientAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
         break
        }
-
-
        }
-
-    
-   return i===2 ? console.log("Congratulations,"+name+" !") : "";
+       
+       if (i>2) {console.log("Congratulations,"+name+" !")}
 
 }
 

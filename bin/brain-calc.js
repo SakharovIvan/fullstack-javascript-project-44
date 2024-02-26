@@ -46,9 +46,9 @@ const brainCalc = (name)=> {
                 break
             }
         }
-        //Проводим проверку на деление
+   
     }
-    console.log("Congratulations,"+name+" !")
+   if (i>2) {console.log("Congratulations,"+name+" !")}
 }
 
 export default brainCalc

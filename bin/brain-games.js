@@ -13,19 +13,19 @@ console.log ("Hello, "+client+"!")
 console.log("Select your game \n1) even-game \n2) calc-game \n3) node-game \n4) progression \n5) prime" )
 const game = readlineSync.question("Your selection: ");
 switch (game) {
-    case 'even-game'||1:
+    case ('even-game'||"1"):
         evenGame(client)
         break
-    case 'calc-game'||2:
+    case ('calc-game'||"2"):
         calcGame(client)
     break
-    case 'node-game'||3:
+    case ('node-game'||"3"):
         nodeGame(client)
         break
-    case 'progression'||4:
+    case ('progression'||"4"):
         progression(client)
         break
-    case 'prime'||5:
+    case ('prime'||"5"):
         prime(client)
         break
     default: break
