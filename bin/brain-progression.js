@@ -25,6 +25,8 @@ const brainProgression = (name)=> {
        if (answer===rightAnswer){ 
         console.log('Correct!')
         i+=1
+        console.log(i)
+
        }else{
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`)
         break
@@ -33,8 +35,8 @@ const brainProgression = (name)=> {
 
        }
 
-    
-       return i===2 ? console.log("Congratulations,"+name+" !") : "";
+       i===2 ? console.log("Congratulations,"+name+" !") : "";
+       return 
 }
 
 export default brainProgression

@@ -16,15 +16,17 @@ const brainPrime = (name)=> {
 
         let clientAnswer = readlineSync.question("Your answer: ")
        if (clientAnswer===correctAnswer){ 
-        console.log('Correct!')
         i+=1
+        console.log('Correct!')
+        console.log(i)
+
        }else{
         console.log(`'${clientAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
         break
        }
        }
-       
-       if (i>2) {console.log("Congratulations,"+name+" !")}
+       i>2 ? console.log("Congratulations,"+name+" !") : "";
+       return 
 
 }
 

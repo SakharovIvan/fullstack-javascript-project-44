@@ -20,8 +20,10 @@ const brainGcd = (name)=> {
             j+=1
         }
         if (answer===maxgcd) {
-            console.log("Correct!")
             i+=1
+            console.log('Correct!')
+            console.log(i)
+
         }else{
             console.log(`${answer} is wrong answer :(. Correct answer was ${maxgcd}`)
             console.log("Let's try again, "+ name+ " !")
@@ -29,8 +31,8 @@ const brainGcd = (name)=> {
         }
         }
 
-    
-        if (i>2) {console.log("Congratulations,"+name+" !")}
+        i===2 ? console.log("Congratulations,"+name+" !") : "";
+        return  
 }
 
 export default brainGcd

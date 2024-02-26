@@ -5,9 +5,9 @@ import readlineSync from 'readline-sync';
 const evenCheck = (number,answer) => {
 if ((number%2===0 && answer==="yes") || (number%2!==0 && answer ==="no")) {
         console.log("Correct!")
-        return 1
+        return true
             } else{
-            return 0
+            return false
             }
 }
 
@@ -19,17 +19,19 @@ const evenGame = (name)=> {
         console.log(`Question: ${randomNumb}`)
         let answer =readlineSync.question("Your answer: ")
         if (answer === "exit") {break}
-        if (evenCheck(randomNumb,answer)===1){
+        if (evenCheck(randomNumb,answer)){
         i+=1
+        console.log('Correct!')
         console.log(i)
         }else{
             console.log(`Let's try again, ${name}`)
             i=0
-            
+            break
         }
     }
-    if (i>2) {console.log("Congratulations,"+name+" !")}
+    i>2 ? console.log("Congratulations,"+name+" !") : "";
+   return 
 }
 
-export default evenGame; evenCheck
+export default evenGame
 

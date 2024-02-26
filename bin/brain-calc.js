@@ -18,6 +18,8 @@ const brainCalc = (name)=> {
             let answer = Number(readlineSync.question("Your answer: "))
             if (randomNumb1+randomNumb2===answer) {
                 i+=1
+                console.log('Correct!')
+                console.log(i)
             }else{
                 console.log(`${answer} is wrong answer :(. Correct answer was ${randomNumb1+randomNumb2}`)
                 console.log("Let's try again, "+ name+ " !")
@@ -30,6 +32,8 @@ const brainCalc = (name)=> {
             let answer = Number(readlineSync.question("Your answer: "))
             if (randomNumb1-randomNumb2===answer) {
                 i+=1
+                console.log('Correct!')
+                console.log(i)
             }else{
                 console.log(`${answer} is wrong answer :(. Correct answer was ${randomNumb1-randomNumb2}`)
                 break
@@ -41,14 +45,17 @@ const brainCalc = (name)=> {
             let answer = Number(readlineSync.question("Your answer: "))
             if (Math.round(randomNumb1/randomNumb2)===answer) {
                 i+=1
+                console.log('Correct!')
+                console.log(i)        
             }else{
-                console.log(`${answer} is wrong answer :(. Correct answer was ${randomNumb1-randomNumb2}`)
+                console.log(`${answer} is wrong answer :(. Correct answer was ${randomNumb1/randomNumb2}`)
                 break
             }
         }
    
     }
-   if (i>2) {console.log("Congratulations,"+name+" !")}
+    i===2 ? console.log("Congratulations,"+name+" !") : "";
+    return 
 }
 
 export default brainCalc
