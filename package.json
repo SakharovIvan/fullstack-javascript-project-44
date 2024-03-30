@@ -9,17 +9,10 @@
     "brain-prime": "bin/brain-prime.js",
     "brain-progression": "bin/brain-progression.js"
   },
-  "description": "[![Actions Status](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions)",
-  "main": "index.js",
+  "description": "Hexlet 1st project 'Mind games'",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "math": "^0.0.3",
-    "mathjs": "^12.2.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
