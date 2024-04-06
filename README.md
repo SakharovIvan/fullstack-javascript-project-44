@@ -1,57 +1,60 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions)
-**Проект "Игры разума"**
-Включает в себя 5 мини игр.
-для Выигрыша в игре необходимо ответить правильно на 3 вопроса подряд
-В случае одного не правильного ответа, игра останавливает
-<!--Установка-->
-## Установка (Linux)
+**Mind Games Project**
+Includes 5 mini games.
+To win the game you must answer 3 questions correctly in a row
+In case of one wrong answer, the game stops
+<!--Installation-->
+## Installation (Linux)
 
-1. Клонирование репозитория 
+1. Cloning the repository
 ```git clone https://github.com/SakharovIvan/fullstack-javascript-project-44/```
 
-2. Переход в репозиторий
+2. Go to the repository
 ```cd fullstack-javascript-project-44```
 
 
-## Запуск проекта
-Для запуска проекта, необходимо написать в консоли ```brain-games```
-далее ответить на вопрос "Имя клиента" - написать Ваше имя (Пример `Ivan`)
+## Launch of the project
+To start the project, you need to write ```brain-games``` in the console
+then answer the question “Client name” - write your name (Example `Ivan`)
 
-### 1 игра - Игра: "Проверка на чётность"
-Вам будет выведено случайное число,необходимо ответить yes - если число четное или no - если число не четное
-после запуска необходимо выбрать игру и ввести в консоль
-`brain-even` 
+### 1 game - Game: "Parity check"
+You will be shown a random number, you must answer yes - if the number is even or no - if the number is not even
+after launch you need to select the game and enter it into the console
+`brain-even`
+[Video with an example of how the Game: "Parity check" works](fullstack-javascript-project-44/brain-even.cast)
 
-### 2 игра - Игра: "Калькулятор"
-Вам будет показано случайное математичесоке выражение, которое нужно вычислить и записать правильный ответ 
-после запуска необходимо выбрать игру и ввести в консоль 
+### Game 2 - Game: "Calculator"
+You will be shown a random mathematical expression that you need to calculate and write down the correct answer
+after launch you need to select the game and enter it into the console
 `brain-calc`
+[Video with an example of how the Game: "Calculator" works](fullstack-javascript-project-44/brain-calc.cast)
 
-### 3 игра - Игра "НОД"
-Вам будет показано два случайных числа, Вам необходимо будет найти наибольший общий делитель этих чисел 
-после запуска необходимо выбрать игру и ввести в консоль 
+### Game 3 - Game "NOD"
+You will be shown two random numbers, you will need to find the greatest common divisor of these numbers
+after launch you need to select the game and enter it into the console
 `brain-gcd`
+[Video with an example of how the Game: "Calculator" works](fullstack-javascript-project-44/brain-gcd.cast)
 
-### 4 игра - Игра "Арифметическая прогрессия"
-Вам будет показан ряд чисел, образующих арифметическую прогрессию, необходимо будет ввести пропущенное число
-после запуска необходимо выбрать игру и ввести в консоль 
+### Game 4 - Arithmetic Progression Game
+You will be shown a series of numbers forming an arithmetic progression; you will need to enter the missing number
+after launch you need to select the game and enter it into the console
 `brain-progression`
+[Video with an example of how the Game: "Calculator" works](fullstack-javascript-project-44/brain-progression.cast)
 
-### 5 игра - Игра "Простое ли число?"
-Вам будет выведено случайное число,необходимо ответить yes - если число простое или no - если число составное
-после запуска необходимо выбрать игру и ввести в консоль 
+### Game 5 - Game "Is the number prime?"
+You will be shown a random number, you must answer yes - if the number is prime or no - if the number is composite
+after launch you need to select the game and enter it into the console
 `brain-prime`
+[Video with an example of how the Game: "Calculator" works](fullstack-javascript-project-44/brain-prime.cast)
 
-### Пример работы 
-[Видео с примером работы программы](fullstack-javascript-project-44/How_to_play.mp4)
 
-### Общее описание команд
-|  Name             | Description                     |
-|-------------------|---------------------------------|
-|brain-games        |Start game    	              |
-|_brain-even_       |Game: "Проверка на чётность"     |
-|_brain-calc_       |Game: "Калькулятор"	      |
-|_brain-gcd_	    |Game: "НОД"		      |
-|_brain-progression_|Game: "Арифметическая прогрессия"|
-|_brain-prime_	    |Game "Простое ли число?"	      |
+### General description of commands
+| Name | Description |
+|-------------------|---------------------------- ----|
+|brain-games |Start game |
+|_brain-even_ |Game: "Parity check" |
+|_brain-calc_ |Game: "Calculator" |
+|_brain-gcd_ |Game: "GCD" |
+|_brain-progression_|Game: "Arithmetic progression"|
+|_brain-prime_ |Game "Is the number prime?" |

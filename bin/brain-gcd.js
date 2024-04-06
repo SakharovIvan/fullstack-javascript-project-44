@@ -1,16 +1,10 @@
-import Math from "math"
 import { min } from "mathjs";
-import readlineSync from 'readline-sync';
+import {getRandomInRange}  from '../src/utils.js'
 
+const brainGcd = ()=> {
 
-const brainGcd = (name)=> {
-    console.log(`Find the greatest common divisor of given numbers.`)
-    let i = 0
-       while (i<3){
-        let randomNumb1 = Math.round(Math.random()*100)
-        let randomNumb2 = Math.round(Math.random()*100)
-        console.log("Question: " + randomNumb1 + "  " + randomNumb2)
-        let answer = Number(readlineSync.question("Your answer: "))
+        let randomNumb1 = getRandomInRange()
+        let randomNumb2 = getRandomInRange()
         let j=0
         let maxgcd=0
          while (j<=min(randomNumb1,randomNumb2)) {
@@ -19,20 +13,8 @@ const brainGcd = (name)=> {
             }
             j+=1
         }
-        if (answer===maxgcd) {
-            i+=1
-            console.log('Correct!')
-            console.log(i)
-
-        }else{
-            console.log(`${answer} is wrong answer :(. Correct answer was ${maxgcd}`)
-            console.log("Let's try again, "+ name+ " !")
-            break
-        }
-        }
-
-        i===2 ? console.log("Congratulations,"+name+" !") : "";
-        return  
+return [`${randomNumb1} & ${randomNumb2}`,maxgcd]
+     
 }
 
 export default brainGcd
