@@ -13,6 +13,11 @@ In case of one wrong answer, the game stops
 2. Go to the repository
 ```cd fullstack-javascript-project-44```
 
+3. Install dependencies
+```npm init```
+
+4. Install the project
+```npm link```
 
 ## Launch of the project
 To start the project, you need to write ```brain-games``` in the console
