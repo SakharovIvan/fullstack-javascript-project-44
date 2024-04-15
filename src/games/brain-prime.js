@@ -1,4 +1,5 @@
-import { getRandomInRange } from "../src/utils.js";
+import { getRandomInRange } from "../utils.js";
+import runEngine from "../index.js";
 
 const brainPrime = () => {
   let checkNumb = getRandomInRange(); //созаем число для проверки
@@ -13,4 +14,9 @@ const brainPrime = () => {
   }
 };
 
-export default brainPrime;
+export default () => {
+  runEngine(
+    `Answer "yes" if given number is prime. Otherwise answer "no".`,
+    brainPrime
+  );
+};

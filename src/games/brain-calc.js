@@ -1,6 +1,7 @@
-import {getRandomInRange}  from '../src/utils.js'
+import { getRandomInRange } from "../utils.js";
+import runEngine from "../index.js";
 
-const brainCalc = ()=> {
+const brainCalc = () => {
   let randomNumb1 = getRandomInRange();
   let randomNumb2 = getRandomInRange();
 
@@ -21,7 +22,8 @@ const brainCalc = ()=> {
         Math.round(randomNumb1 / randomNumb2),
       ];
   }
-}
-export default  brainCalc
+};
 
- 
+export default () => {
+  runEngine(`What is the result of the expression?`, brainCalc);
+};

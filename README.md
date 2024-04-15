@@ -55,11 +55,11 @@ after launch you need to select the game and enter it into the console
 
 
 ### General description of commands
-| Name | Description |
-|-------------------|---------------------------- ----|
-|brain-games |Start game |
-|_brain-even_ |Game: "Parity check" |
-|_brain-calc_ |Game: "Calculator" |
-|_brain-gcd_ |Game: "GCD" |
-|_brain-progression_|Game: "Arithmetic progression"|
-|_brain-prime_ |Game "Is the number prime?" |
+| Name              | Description                    |
+|-------------------|--------------------------------|
+|brain-games        |Start game                      |
+|_brain-even_       |Game: "Parity check"            |
+|_brain-calc_       |Game: "Calculator"              |
+|_brain-gcd_        |Game: "GCD"                     |
+|_brain-progression_|Game: "Arithmetic progression"  |
+|_brain-prime_      |Game "Is the number prime?"     |

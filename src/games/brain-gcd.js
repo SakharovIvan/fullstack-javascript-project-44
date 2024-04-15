@@ -1,5 +1,6 @@
 import { min } from "mathjs";
-import { getRandomInRange } from "../src/utils.js";
+import { getRandomInRange } from "../utils.js";
+import runEngine from "../index.js";
 
 const brainGcd = () => {
   let randomNumb1 = getRandomInRange();
@@ -15,4 +16,6 @@ const brainGcd = () => {
   return [`${randomNumb1} & ${randomNumb2}`, maxgcd];
 };
 
-export default brainGcd;
+export default () => {
+  runEngine(`Find the greatest common divisor of given numbers.`, brainGcd);
+};

@@ -1,4 +1,5 @@
-import { getRandomInRange } from "../src/utils.js";
+import { getRandomInRange } from "../utils.js";
+import runEngine from "../index.js";
 
 const brainProgression = () => {
   let firstNumber = getRandomInRange(); //зайдаем первое чило прогрессии
@@ -18,4 +19,6 @@ const brainProgression = () => {
   return [mas, rightAnswer];
 };
 
-export default brainProgression;
+export default () => {
+  runEngine(`What number is missing in the progression?`, brainProgression);
+};
