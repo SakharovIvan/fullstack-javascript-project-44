@@ -1,18 +1,23 @@
+#!/usr/src/games/env node
 import { min } from "mathjs";
 import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
 
-const brainGcd = () => {
-  let randomNumb1 = getRandomInRange();
-  let randomNumb2 = getRandomInRange();
+const gcd = (numb1, numb2) => {
   let j = 0;
-  let maxgcd = 0;
-  while (j <= min(randomNumb1, randomNumb2)) {
-    if (randomNumb1 % j === 0 && randomNumb2 % j === 0) {
-      maxgcd = j;
+  while (j <= min(numb1, numb2)) {
+    if (numb1 % j === 0 && numb2 % j === 0) {
+      return j;
     }
     j += 1;
   }
+};
+
+const brainGcd = () => {
+  let randomNumb1 = getRandomInRange();
+  let randomNumb2 = getRandomInRange();
+  let maxgcd = gcd(randomNumb1, randomNumb2);
+
   return [`${randomNumb1} & ${randomNumb2}`, maxgcd];
 };
 

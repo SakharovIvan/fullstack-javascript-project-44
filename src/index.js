@@ -1,8 +1,12 @@
 import readlineSync from "readline-sync";
+import nameWelcome from "../src/cli.js";
 
 const roundCount = 1;
 
 const runEngine = (rules, generateRound) => {
+ const clien = nameWelcome() 
+ if(rules===undefined){return}
+ 
   console.log(rules);
   for (let i = 0; i < roundCount; i++) {
     let [question, answer] = generateRound();
@@ -11,10 +15,11 @@ const runEngine = (rules, generateRound) => {
     if (cliAnswer === "exit") {
       return;
     }
-    if (cliAnswer === answer.toString()) {
+    if (cliAnswer === answer) {
       console.log("Correct!");
     } else {
-      console.log(`Correct answer is  ${answer}`);
+      console.log(`${cliAnswer} os wrong answer. Correct answer is  ${answer}`);
+      console.log(`Let's try again ${clien}`)
       return;
     }
   }

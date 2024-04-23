@@ -11,7 +11,7 @@ brain-games-gcd:
 brain-games-prime:
 	node src/games/brain-prime.js
 brain-games-progression:
-	node src/gamesbin/brain-progression.js
+	node src/games/brain-progression.js
 publish:
 	npm publish --dry-run
 lint:

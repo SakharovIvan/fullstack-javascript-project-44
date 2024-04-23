@@ -1,29 +1,36 @@
+#!/usr/src/games/env node
 import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
 
-const brainCalc = () => {
-  let randomNumb1 = getRandomInRange();
-  let randomNumb2 = getRandomInRange();
+const getRandomOperator = () => {
+  const operators = ["+", "-", "*"];
+  return operators[getRandomInRange(0, operators.length - 1)];
+};
 
-  //создаем 3 рандомное значение, в будущем применена логика
-  // + = 1
-  // - = 2
-  // % = 3
-  let randomZnak = getRandomInRange(1, 3);
-
-  switch (randomZnak) {
-    case 1:
-      return [`${randomNumb1}+${randomNumb2}`, randomNumb1 + randomNumb2];
-    case 2:
-      return [`${randomNumb1}-${randomNumb2}`, randomNumb1 - randomNumb2];
-    case 3:
-      return [
-        `${randomNumb1}/${randomNumb2}`,
-        Math.round(randomNumb1 / randomNumb2),
-      ];
+const calculation = (num1, num2, operator) => {
+  switch (operator) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    default:
+      throw new Error(`Invalid operator - ${operator}`);
   }
 };
 
+const generateRound = () => {
+  const num1 = getRandomInRange();
+  const num2 = getRandomInRange();
+  const operator = getRandomOperator();
+
+  const question = `${num1} ${operator} ${num2}`;
+  const answer = String(calculation(num1, num2, operator));
+
+  return [question, answer];
+};
+
 export default () => {
-  runEngine(`What is the result of the expression?`, brainCalc);
+  runEngine("What is the result of the expression?", generateRound);
 };
