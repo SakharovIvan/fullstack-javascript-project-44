@@ -1,4 +1,4 @@
-#!/usr/src/games/env node
+
 import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
 const isPrime = (numb) => {
@@ -10,13 +10,9 @@ const isPrime = (numb) => {
 };
 
 const brainPrime = () => {
-  let checkNumb = getRandomInRange(); //созаем число для проверки
-
-  if (isPrime(checkNumb)) {
-    return [checkNumb, "yes"];
-  } else {
-    return [checkNumb, "no"];
-  }
+  let checkNumb = getRandomInRange();
+  const answer = isPrime(checkNumb) ? "yes" : "no";
+  return [checkNumb, answer];
 };
 
 export default () => {

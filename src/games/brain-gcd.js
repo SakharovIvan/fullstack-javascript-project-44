@@ -17,8 +17,8 @@ const brainGcd = () => {
   let randomNumb1 = getRandomInRange();
   let randomNumb2 = getRandomInRange();
   let maxgcd = gcd(randomNumb1, randomNumb2);
-
-  return [`${randomNumb1} & ${randomNumb2}`, maxgcd];
+  const answer = `${randomNumb1}, ${randomNumb2}`
+  return [answer, maxgcd];
 };
 
 export default () => {

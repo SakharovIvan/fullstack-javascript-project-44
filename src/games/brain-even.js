@@ -3,15 +3,17 @@ import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
 
 //Функция проверки числа и ответа на четность
-const isEven = (numb)=>{numb % 2 === 0}
+const isEven = (numb) => numb % 2 === 0;
 
 const evenGame = () => {
-  let randomNumb = getRandomInRange();
-  if (isEven(randomNumb) ) {
-    return [randomNumb, "yes"];
+  const randomNumb = getRandomInRange();
+  const answer = "";
+  if (isEven(randomNumb)) {
+    answer = "yes";
   } else {
-    return [randomNumb, "no"];
+    answer = "no";
   }
+  return [randomNumb, answer];
 };
 
 export default () => {

@@ -4,22 +4,22 @@ import nameWelcome from "../src/cli.js";
 const roundCount = 1;
 
 const runEngine = (rules, generateRound) => {
- const clien = nameWelcome() 
+ const userName = nameWelcome() 
  if(rules===undefined){return}
  
   console.log(rules);
   for (let i = 0; i < roundCount; i++) {
-    let [question, answer] = generateRound();
+    const [question, answer] = generateRound();
     console.log(question);
-    const cliAnswer = readlineSync.question("Your answer: ");
-    if (cliAnswer === "exit") {
+    const userAnswer = readlineSync.question("Your answer: ");
+    if (userAnswer === "exit") {
       return;
     }
-    if (cliAnswer === answer) {
+    if (userAnswer === answer) {
       console.log("Correct!");
     } else {
-      console.log(`${cliAnswer} os wrong answer. Correct answer is  ${answer}`);
-      console.log(`Let's try again ${clien}`)
+      console.log(`${userAnswer} os wrong answer. Correct answer is  ${answer}`);
+      console.log(`Let's try again ${userName}`)
       return;
     }
   }
