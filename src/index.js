@@ -1,7 +1,7 @@
 import readlineSync from "readline-sync";
 import nameWelcome from "../src/cli.js";
 
-const roundCount = 1;
+const roundCount = 3;
 
 const runEngine = (rules, generateRound) => {
  const userName = nameWelcome() 
