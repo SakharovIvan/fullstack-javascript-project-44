@@ -1,4 +1,3 @@
-#!/usr/src/games/env node
 import { min } from "mathjs";
 import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
