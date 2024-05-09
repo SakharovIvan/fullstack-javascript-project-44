@@ -13,9 +13,9 @@ return a;
 const brainGcd = () => {
   let randomNumb1 = getRandomInRange();
   let randomNumb2 = getRandomInRange();
-  let maxgcd = `${gcd(randomNumb1, randomNumb2)}`;
-  const answer = `${randomNumb1}, ${randomNumb2}`
-  return [answer, maxgcd];
+  let answer = `${gcd(randomNumb1, randomNumb2)}`;
+  const question = `${randomNumb1} ${randomNumb2}`
+  return [question, answer];
 };
 
 export default () => {
