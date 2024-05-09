@@ -23,7 +23,7 @@ const runEngine = (rules, generateRound) => {
       return;
     }
   }
-  console.log(`Congratulations!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runEngine
