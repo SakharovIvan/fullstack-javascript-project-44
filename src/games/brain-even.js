@@ -5,7 +5,7 @@ const isEven = (numb) => numb % 2 === 0;
 
 const generateRound = () => {
   const question = getRandomInRange();
-  const answer = isEven(randomNumb) ? "yes" : "no";
+  const answer = isEven(question) ? "yes" : "no";
   return [question, answer];
 };
 
