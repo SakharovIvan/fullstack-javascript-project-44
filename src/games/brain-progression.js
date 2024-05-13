@@ -9,16 +9,16 @@ const generateProgression = (start, step, length = 11) => {
   return progression;
 };
 
-const brainProgression = () => {
-  let firstNumber = getRandomInRange(); 
-  let step = getRandomInRange(1, 10); 
-  let hiddenIndex = getRandomInRange(0, 9); 
-  const progression = generateProgression(firstNumber, step);
-  const rightAnswer = progression[hiddenIndex + 1];
-  progression[hiddenIndex] = "..";
-  return [progression, rightAnswer];
+const generateRound = () => {
+  const firstNumber = getRandomInRange(); 
+  const step = getRandomInRange(1, 10); 
+  const hiddenIndex = getRandomInRange(0, 9); 
+  const question = generateProgression(firstNumber, step);
+  const answer = progression[hiddenIndex + 1];
+  question[hiddenIndex] = "..";
+  return [question, answer];
 };
 
 export default () => {
-  runEngine(`What number is missing in the progression?`, brainProgression);
+  runEngine(`What number is missing in the progression?`, generateRound);
 };

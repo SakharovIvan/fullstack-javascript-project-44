@@ -10,14 +10,14 @@ const gcd = (a, b) => {
 return a;
 };
 
-const brainGcd = () => {
-  let randomNumb1 = getRandomInRange();
-  let randomNumb2 = getRandomInRange();
-  let answer = `${gcd(randomNumb1, randomNumb2)}`;
+const generateRound = () => {
+  const randomNumb1 = getRandomInRange();
+  const randomNumb2 = getRandomInRange();
+  const answer = `${gcd(randomNumb1, randomNumb2)}`;
   const question = `${randomNumb1} ${randomNumb2}`
   return [question, answer];
 };
 
 export default () => {
-  runEngine(`Find the greatest common divisor of given numbers.`, brainGcd);
+  runEngine(`Find the greatest common divisor of given numbers.`, generateRound);
 };

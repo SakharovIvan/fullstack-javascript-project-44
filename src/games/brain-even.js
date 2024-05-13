@@ -3,15 +3,15 @@ import runEngine from "../index.js";
 
 const isEven = (numb) => numb % 2 === 0;
 
-const evenGame = () => {
-  const randomNumb = getRandomInRange();
+const generateRound = () => {
+  const question = getRandomInRange();
   const answer = isEven(randomNumb) ? "yes" : "no";
-  return [randomNumb, answer];
+  return [question, answer];
 };
 
 export default () => {
   runEngine(
     `Answer "yes" if the number is even, otherwise answer "no".`,
-    evenGame
+    generateRound
   );
 };

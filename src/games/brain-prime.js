@@ -9,15 +9,15 @@ const isPrime = (numb) => {
   return mas.includes(numb);
 };
 
-const brainPrime = () => {
-  let checkNumb = getRandomInRange();
-  const answer = isPrime(checkNumb) ? "yes" : "no";
-  return [checkNumb, answer];
+const generateRound = () => {
+  const question = getRandomInRange();
+  const answer = isPrime(question) ? "yes" : "no";
+  return [question, answer];
 };
 
 export default () => {
   runEngine(
     `Answer "yes" if given number is prime. Otherwise answer "no".`,
-    brainPrime
+    generateRound
   );
 };
