@@ -10,13 +10,13 @@ const generateProgression = (start, step, length = 7) => {
 };
 
 const generateRound = () => {
-  const firstNumber = getRandomInRange(); 
-  const step = getRandomInRange(1, 10); 
-  const hiddenIndex = getRandomInRange(0, 6); 
+  const firstNumber = getRandomInRange();
+  const step = getRandomInRange(1, 10);
+  const hiddenIndex = getRandomInRange(0, 6);
   const progression = generateProgression(firstNumber, step);
   const answer = progression[hiddenIndex];
   progression[hiddenIndex] = "..";
-  const question = progression.join(' ')
+  const question = progression.join(" ");
   return [question, answer];
 };
 
