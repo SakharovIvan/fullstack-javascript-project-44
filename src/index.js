@@ -15,7 +15,7 @@ const runEngine = (rules, generateRound) => {
     if (userAnswer === "exit") {
       return;
     }
-    if (userAnswer === answer) {
+    if (userAnswer == answer) {
       console.log("Correct!");
     } else {
       console.log(`'${userAnswer}' is wrong answer. Correct answer was  '${answer}'`);
