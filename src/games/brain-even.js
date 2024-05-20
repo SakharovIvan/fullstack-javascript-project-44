@@ -11,7 +11,7 @@ const generateRound = () => {
 
 export default () => {
   runEngine(
-    `Answer "yes" if the number is even, otherwise answer "no".`,
+    'Answer "yes" if the number is even, otherwise answer "no".',
     generateRound,
   );
 };

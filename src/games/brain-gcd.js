@@ -20,7 +20,7 @@ const generateRound = () => {
 
 export default () => {
   runEngine(
-    `Find the greatest common divisor of given numbers.`,
+    'Find the greatest common divisor of given numbers.',
     generateRound,
   );
 };

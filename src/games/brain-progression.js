@@ -21,5 +21,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  runEngine(`What number is missing in the progression?`, generateRound);
+  runEngine('What number is missing in the progression?', generateRound);
 };
