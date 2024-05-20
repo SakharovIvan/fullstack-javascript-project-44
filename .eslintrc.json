@@ -8,7 +8,11 @@
         "plugin:react/recommended",
         "prettier"
     ],
+    "parser": "babel-eslint",
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
