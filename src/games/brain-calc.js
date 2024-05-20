@@ -1,18 +1,18 @@
-import { getRandomInRange } from "../utils.js";
-import runEngine from "../index.js";
+import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
 
 const getRandomOperator = () => {
-  const operators = ["+", "-", "*"];
+  const operators = ['+', '-', '*'];
   return operators[getRandomInRange(0, operators.length - 1)];
 };
 
 const calculation = (num1, num2, operator) => {
   switch (operator) {
-    case "+":
+    case '+':
       return num1 + num2;
-    case "-":
+    case '-':
       return num1 - num2;
-    case "*":
+    case '*':
       return num1 * num2;
     default:
       throw new Error(`Invalid operator - ${operator}`);
@@ -31,5 +31,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  runEngine("What is the result of the expression?", generateRound);
+  runEngine('What is the result of the expression?', generateRound);
 };

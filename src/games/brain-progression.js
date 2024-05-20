@@ -1,5 +1,5 @@
-import { getRandomInRange } from "../utils.js";
-import runEngine from "../index.js";
+import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
 
 const generateProgression = (start, step, length = 7) => {
   const progression = [];
@@ -15,8 +15,8 @@ const generateRound = () => {
   const hiddenIndex = getRandomInRange(0, 6);
   const progression = generateProgression(firstNumber, step);
   const answer = progression[hiddenIndex];
-  progression[hiddenIndex] = "..";
-  const question = progression.join(" ");
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
   return [question, answer];
 };
 

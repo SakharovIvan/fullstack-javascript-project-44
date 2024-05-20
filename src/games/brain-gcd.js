@@ -1,5 +1,5 @@
-import { getRandomInRange } from "../utils.js";
-import runEngine from "../index.js";
+import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
 
 const gcd = (a, b) => {
   while (b !== 0) {
@@ -21,6 +21,6 @@ const generateRound = () => {
 export default () => {
   runEngine(
     `Find the greatest common divisor of given numbers.`,
-    generateRound
+    generateRound,
   );
 };

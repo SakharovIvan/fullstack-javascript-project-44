@@ -1,5 +1,5 @@
-import { getRandomInRange } from "../utils.js";
-import runEngine from "../index.js";
+import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
 
 const isPrime = (numb) => {
   let mas = [
@@ -11,13 +11,13 @@ const isPrime = (numb) => {
 
 const generateRound = () => {
   const question = getRandomInRange();
-  const answer = isPrime(question) ? "yes" : "no";
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
 export default () => {
   runEngine(
     `Answer "yes" if given number is prime. Otherwise answer "no".`,
-    generateRound
+    generateRound,
   );
 };
