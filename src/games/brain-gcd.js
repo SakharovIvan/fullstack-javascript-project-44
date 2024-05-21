@@ -1,9 +1,9 @@
-import { getRandomInRange } from '../utils.js';
+import { default as getRandomInRange } from '../utils.js';
 import runEngine from '../index.js';
 
 const gcd = (a, b) => {
   while (b !== 0) {
-    let temp = b;
+    const temp = b;
     b = a % b;
     a = temp;
   }
