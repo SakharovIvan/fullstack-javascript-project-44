@@ -25,7 +25,7 @@ then answer the question “Client name” - write your name (Example `Ivan`)
 
 ### 0 game - Game: "Brain games"
 Enter your name only
-![Video with an example of how the Game: "Brain games" works](./brain-games.cast)
+[![asciicast](https://asciinema.org/a/9R6GD0ThViKMylJlzfsiuFjYj)](https://asciinema.org/a/9R6GD0ThViKMylJlzfsiuFjYj)
 
 ### 1 game - Game: "Parity check"
 You will be shown a random number, you must answer yes - if the number is even or no - if the number is not even
