@@ -25,37 +25,37 @@ then answer the question “Client name” - write your name (Example `Ivan`)
 
 ### 0 game - Game: "Brain games"
 Enter your name only
-[Video with an example of how the Game: "Brain games" works](./brain-games.cast)
+![Video with an example of how the Game: "Brain games" works](./brain-games.cast)
 
 ### 1 game - Game: "Parity check"
 You will be shown a random number, you must answer yes - if the number is even or no - if the number is not even
 after launch you need to select the game and enter it into the console
 `brain-even`
-[Video with an example of how the Game: "Parity check" works](./brain-even.cast)
+![Video with an example of how the Game: "Parity check" works](./brain-even.cast)
 
 ### Game 2 - Game: "Calculator"
 You will be shown a random mathematical expression that you need to calculate and write down the correct answer
 after launch you need to select the game and enter it into the console
 `brain-calc`
-[Video with an example of how the Game: "Calculator" works](./brain-calc.cast)
+![Video with an example of how the Game: "Calculator" works](./brain-calc.cast)
 
 ### Game 3 - Game "NOD"
 You will be shown two random numbers, you will need to find the greatest common divisor of these numbers
 after launch you need to select the game and enter it into the console
 `brain-gcd`
-[Video with an example of how the Game: "Calculator" works](./brain-gcd.cast)
+![Video with an example of how the Game: "Calculator" works](./brain-gcd.cast)
 
 ### Game 4 - Arithmetic Progression Game
 You will be shown a series of numbers forming an arithmetic progression; you will need to enter the missing number
 after launch you need to select the game and enter it into the console
 `brain-progression`
-[Video with an example of how the Game: "Calculator" works](./brain-progression.cast)
+![Video with an example of how the Game: "Calculator" works](./brain-progression.cast)
 
 ### Game 5 - Game "Is the number prime?"
 You will be shown a random number, you must answer yes - if the number is prime or no - if the number is composite
 after launch you need to select the game and enter it into the console
 `brain-prime`
-[Video with an example of how the Game: "Calculator" works](./brain-prime.cast)
+![Video with an example of how the Game: "Calculator" works](./brain-prime.cast)
 
 
 ### General description of commands
