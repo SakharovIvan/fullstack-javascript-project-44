@@ -17,7 +17,7 @@ const runEngine = (rules, generateRound) => {
     if (userAnswer === 'exit') {
       return;
     }
-    if (userAnswer == answer) {
+    if (userAnswer === answer.toString()) {
       console.log('Correct!');
     } else {
       console.log(

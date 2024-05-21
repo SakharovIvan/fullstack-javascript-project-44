@@ -3,7 +3,7 @@ import runEngine from '../index.js';
 
 const generateProgression = (start, step, length = 7) => {
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + step * i);
   }
   return progression;
