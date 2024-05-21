@@ -25,6 +25,7 @@ then answer the question “Client name” - write your name (Example `Ivan`)
 
 ### 0 game - Game: "Brain games"
 Enter your name only
+
 [![asciicast](https://asciinema.org/a/9R6GD0ThViKMylJlzfsiuFjYj)](https://asciinema.org/a/9R6GD0ThViKMylJlzfsiuFjYj)
 
 ### 1 game - Game: "Parity check"
