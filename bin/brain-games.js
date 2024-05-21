@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import runEngine from "../src/index.js";
+import runEngine from '../src/index.js';
 
-runEngine()
-
+runEngine();
