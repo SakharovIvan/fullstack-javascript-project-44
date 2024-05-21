@@ -1,13 +1,13 @@
 import getRandomInRange from '../utils.js';
 import runEngine from '../index.js';
 
-const gcd = (a, b) => {
-  while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
+const gcd = (numb1, numb2) => {
+  while (numb2 !== 0) {
+    const temp = numb2;
+    numb2 = numb1 % numb2;
+    numb1 = temp;
   }
-  return a;
+  return numb1;
 };
 
 const generateRound = () => {
