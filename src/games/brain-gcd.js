@@ -1,7 +1,9 @@
 import getRandomInRange from '../utils.js';
 import runEngine from '../index.js';
 
-const gcd = (numb1, numb2) => {
+const gcd = (a, b) => {
+  let numb1 = a;
+  let numb2 = b;
   while (numb2 !== 0) {
     const temp = numb2;
     numb2 = numb1 % numb2;
