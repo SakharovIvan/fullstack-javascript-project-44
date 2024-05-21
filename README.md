@@ -23,6 +23,10 @@ In case of one wrong answer, the game stops
 To start the project, you need to write ```brain-games``` in the console
 then answer the question “Client name” - write your name (Example `Ivan`)
 
+### 0 game - Game: "Brain games"
+Enter your name only
+[Video with an example of how the Game: "Brain games" works](./brain-games.cast)
+
 ### 1 game - Game: "Parity check"
 You will be shown a random number, you must answer yes - if the number is even or no - if the number is not even
 after launch you need to select the game and enter it into the console
@@ -51,7 +55,7 @@ after launch you need to select the game and enter it into the console
 You will be shown a random number, you must answer yes - if the number is prime or no - if the number is composite
 after launch you need to select the game and enter it into the console
 `brain-prime`
-[Video with an example of how the Game: "Calculator" works](fullstack-javascript-project-44/brain-prime.cast)
+[Video with an example of how the Game: "Calculator" works](./brain-prime.cast)
 
 
 ### General description of commands
