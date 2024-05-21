@@ -1,4 +1,4 @@
-import { default as getRandomInRange } from '../utils.js';
+import * as getRandomInRange from '../utils.js';
 import runEngine from '../index.js';
 
 const generateProgression = (start, step, length = 7) => {
