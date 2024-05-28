@@ -2,6 +2,8 @@
 
 [![Actions Status](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SakharovIvan/fullstack-javascript-project-44/actions)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/2500eb746d4097217e83/maintainability)](https://codeclimate.com/github/SakharovIvan/fullstack-javascript-project-44/maintainability)
+
 **Mind Games Project**
 Includes 5 mini games.
 To win the game you must answer 3 questions correctly in a row
